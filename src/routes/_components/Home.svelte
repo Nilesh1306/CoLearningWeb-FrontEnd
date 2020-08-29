@@ -13,9 +13,8 @@
 		peopleList = peopleList;
 	}
 	async function getData() {
-		console.log($session.user.access_token);
+		$session.user = response.user;
 		const userList = await api.get('users', $session.user.access_token);
-		console.log(userList);
 		peopleList = userList;
 	}
 	getData();

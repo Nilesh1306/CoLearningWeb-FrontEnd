@@ -15,7 +15,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "compression": "^1.7.1",
-    "express-session": "^1.16.2",
+    "express-session": "^1.17.1",
     "marked": "^0.6.2",
     "node-fetch": "^2.1.2",
     "polka": "^0.5.2",
@@ -39,7 +39,7 @@
     "rollup-plugin-css-only": "^2.1.0",
     "rollup-plugin-svelte": "^5.1.0",
     "rollup-plugin-terser": "^5.0.0",
-    "sapper": "^0.27.8",
+    "sapper": "^0.27.16",
     "svelte": "^3.12.1",
     "svelte-loader": "^2.13.4"
   },

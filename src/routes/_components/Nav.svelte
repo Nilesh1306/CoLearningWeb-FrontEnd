@@ -29,6 +29,11 @@
 					</a>
 				</li>
 				<li class="nav-item">
+					<a rel='prefetch' href="/request-conn" class:active="{$page.path === '/request-conn'}">
+						Request Connections
+					</a>
+				</li>
+				<li class="nav-item">
 					<a rel='prefetch' href="/login" class="nav-link" on:click={logout}>
 						Log Out
 					</a>

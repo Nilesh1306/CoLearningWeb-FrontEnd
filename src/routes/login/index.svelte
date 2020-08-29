@@ -4,25 +4,25 @@
   import { post } from "utils.js";
 
   const { session } = stores();
-
+  let response =null;
   let username = "";
   let password = "";
   let errors = null;
 
   async function submit(event) {
-    const response = await post(`http://localhost:3100/api/login`, {
+      response = await post(`http://localhost:3100/api/login`, {
       username: username,
       password: password
     });
 
     // TODO handle network errors
     errors = response.errors;
-
     // TODO handle network errors
     if (response.errors != undefined) {
       errors = response.errors;
     } else {
       $session.user = response.user;
+      console.log(response);
       goto('/Home');
     }
   }
